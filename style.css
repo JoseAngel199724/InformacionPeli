@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(33, 25, 34);
+  
+}
+body{
+   
+    margin-left: 1px;
+    margin-right: 1px;
+    
+}
+.titulo{
+    font-family: 'Onest', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+.imag{
+    
+  height: 800px;
+  
+}
+.filtro{
+    display: none;
+}
+.hide{
+    display: none !important;
+}

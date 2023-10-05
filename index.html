@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@300&family=Poppins:wght@500&display=swap" rel="stylesheet">
+<script defer src="/buscador.js"></script>
+<title>Document</title>
+</head>
+<body>
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-md bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#accion" type="button" id="btnaccion">Accion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <div class="container-fluid">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" id="buscador" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" >Search</button>
+            </form>
+          </div>
+      </div>
+      </div>
+    </div>
+  </nav>
+ </div>
+   
+
+ <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="ImegenPelicula/accion/Amillonesdekilómetros.jpg" class="d-block imag w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5>A millones de kilómetros</h5>
+          <p class="text-light" >La historia del astronauta mexicano-estadounidense José Hernéndez, quien se convirtió en el primer trabajador agrícola migrante en viajar al espacio.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="ImegenPelicula/animacion/ElReyMono.jpg" class="d-block imag w-100" alt="...">
+        <div class="carousel-caption  d-md-block">
+          <h5>El Rey Mono</h5>
+          <p  class="text-light">Un mono y su vara mágica unen fuerzas en una épica aventura en la que se enfrentan a demonios, dragones, dioses y al peor de los adversarios: ¡el mismísimo ego del mono!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="ImegenPelicula/TERRO/LaHerencia2020.jpg" class="d-block imag w-100" alt="...">
+        <div class="carousel-caption  d-md-block">
+          <h5 >La Herencia</h5>
+          <p class="text-white " >Una herencia lleva a una mujer a Europa del Este para descubrir un oscuro e inquietante secreto familiar.</p>
+        </div>
+      </div>
+    </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+ </div>
+      
+      <div class="container-fluid mt-3 articulo" id="titendencia">
+        <div  class="row align-items-start">
+          <div class="titulo">Tendencia</div>
+       
+        </div>
+      </div>
+      <div class="container-fluid articulo " id="tendecia">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6 carousel slide articulo">
+          <div class="col articulo ">
+            <a class="nav-link active mt-2 articulo" id="bluebeedle" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Blue Beetle  <img src="ImegenPelicula/accion/bluebeedle.jpg" class="d-block w-100" alt="..."></a>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title titulo" id="offcanvasExampleLabel">Blue Beetle</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="  mb-5">
+                  Un adolescente mexicano encuentra un escarabajo alienígena que le proporciona una armadura superpoderosa.
+                </div >
+                <a class=" btn btn-primary mt-5"  role="button" target="_blank" href="https://v2.cinecalidad.com.mx/ver-pelicula/blue-beetle-en-cinecalidad/">  Ver pelicula</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col articulo">
+            <a class="nav-link active mt-2 articulo" data-bs-toggle="offcanvas" href="#offcanvas2" role="button" aria-controls="offcanvasExamples"> Amigos de las vacaciones 2  <img src="ImegenPelicula/codemia/Amigosdelasvacaciones2.jpg" class="d-block w-100" alt="..."></a>
+          
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas2" aria-labelledby="offcanvasExampleLabelss">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss">Amigos de las vacaciones 2</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body ">
+                <div class="mb-5">
+                  La pareja de recién casados ​​Marcus y Emily invitan a sus desinhibidos mejores amigos Ron y Kyla, quienes también están recién casados ​​y tienen un bebé, para unirse a ellos en unas vacaciones cuando Marcus consigue un viaje con todos los gastos pagados a un centro turístico del Caribe. Pero cuando el padre encarcelado de Kyla, Reese, es liberado de San Quentin y aparece en el resort sin previo aviso en el peor momento posible, las cosas se salen de control, lo que altera los mejores planes de Marcus y convierte el viaje perfecto de los amigos de vacaciones en un total caos.
+                </div>
+                  <a class=" btn btn-primary "  role="button" target="_blank" href="https://v2.cinecalidad.com.mx/ver-pelicula/amigos-de-las-vacaciones-2/
+                  ">  Ver pelicula</a>
+              </div>
+            </div>
+          </div>
+
+                 
+          <div class="col articulo">
+            <a class="nav-link active mt-2 articulo" data-bs-toggle="offcanvas" href="#offcanvas3" role="button" aria-controls="offcanvasExamples"> Golpe Bajo: El Juego Final  <img src="ImegenPelicula/codemia/GolpeBajoElJuegoFinal.jpg" class="d-block w-100" alt="..."></a>
+          
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas3" aria-labelledby="offcanvasExampleLabelss">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss">Golpe Bajo: El Juego Final</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body ">
+                <div class="mb-5">
+                  Mariscal de campo pro, Paul Crewe y ex campeón del colegio y entrenador, Nate Scarboro cumple una condena en la misma prisión. Pedido reunir un equipo de presidiarios para tomar las guardias, Crewe alista la ayuda de Scarboro para entrenar a los presidiarios a la victoria en un juego del fútbol 'fijado' para resultar tras totalmente otro camino.
+                </div>
+                  <a class=" btn btn-primary "  role="button" target="_blank" href="https://v2.cinecalidad.com.mx/ver-pelicula/golpe-bajo-el-juego-final/">  Ver pelicula</a>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col articulo">
+            <a class="nav-link active mt-2 articulo" data-bs-toggle="offcanvas" href="#offcanvas4" role="button" aria-controls="offcanvasExamples"> Drácula de Bram Stoker  <img src="ImegenPelicula/accion/DraculadeBramStoker.jpg" class="d-block w-100" alt="..."></a>
+          
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas4" aria-labelledby="offcanvasExampleLabelss">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss">Drácula de Bram Stoker</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body ">
+                <div class="mb-5">
+                  El vampiro de siglos de edad, el Conde Drácula, viene a Inglaterra para seducir a la prometida de su abogado Jonathan Harker, Mina Murray, y causar estragos en el país extranjero.
+                </div>
+                  <a class=" btn btn-primary "  role="button" target="_blank" href="https://v2.cinecalidad.com.mx/ver-pelicula/dracula-de-bram-stoker/">  Ver pelicula</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col articulo">
+            <a class="nav-link active mt-2 articulo" data-bs-toggle="offcanvas" href="#offcanvas5" role="button" aria-controls="offcanvasExamples">  Spider-Man: Cruzando el Multiverso <img src="ImegenPelicula/animacion/Spider-ManCruzandoelMultiverso.jpg" class="d-block w-100" alt="..."></a>
+          
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas5" aria-labelledby="offcanvasExampleLabelss">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss">Spider-Man: Cruzando el Multiverso</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body ">
+                <div class="mb-5">
+                  Segunda entrega de las aventuras de Miles Morales tras el filme de animación ganador del Oscar Spider-Man: Un nuevo universo (2018). Para demostrar lo que vale y transportase a través del Multiverso, el joven Spider-Man de Brooklyn se aliará con Gwen Stacy. Tras este reencuentro, los dos jóvenes arácnidos conocerán a todo un grupo de élite con los mejores Spider-Man de los diferentes Multiversos. Claro que ser un Hombre Araña también tiene sus sacrificios, y Miles Morales deberá tomar importantes decisiones. Cuando esté en juego salvar cada uno de los mundos, además de a las personas más queridas, Miles optará por hacerlo a su manera.
+                </div>
+                  <a class=" btn btn-primary "  role="button" target="_blank" href="https://cinecalidad.casa/88-spider-man-cruzando-el-multiverso-2023-cinecalidad.html">  Ver pelicula</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col articulo">
+            <a class="nav-link active mt-2 articulo" data-bs-toggle="offcanvas" href="#offcanvas6" role="button" aria-controls="offcanvasExamples">Scooby Doo! ¡Y Krypto al rescate!  <img src="ImegenPelicula/animacion/¡ScoobyDoo!¡YKryptoarescate!.jpg" class="d-block w-100" alt="..."></a>
+          
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas6" aria-labelledby="offcanvasExampleLabelss">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss">¡Scooby Doo! ¡Y Krypto al rescate!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body ">
+                <div class="mb-5">
+                  Película de animación protagonizada por Scooby-Doo y Krypto, el perro superhéroe de DC Comics. El film nunca llegó a estrenarse ni anunciarse oficialmente, pero en marzo de 2023 se filtró completo en internet por un ‘leaker’ anónimo.
+
+                </div>
+                  <a class=" btn btn-primary "  role="button" target="_blank" href="https://cinecalidad.casa/3740-%C2%A1scooby-doo-%C2%A1y-krypto-al-rescate-2023-cinecalidad.html#!">  Ver pelicula</a>
+              </div>
+            </div>
+          </div>
+
+         
+        </div>
+      </div>
+
+   
+
+      <div class="container-fluid mt-3 articulo  " id="titeserie">
+        <div  class="row align-items-start">
+          <div class="titulo" >Series</div>
+       
+        </div>
+      </div>
+   
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6 carousel slide me-1 ms-1 articulo" id="series">
+          <div class="col articulo">
+            <a class="nav-link active mt-2 articulo " data-bs-toggle="offcanvas" href="#Ahsoka" role="button" aria-controls="offcanvasExample"> Ahsoka <img src="imgenesSerie/Ahsoka.jpg" class="d-block w-100" alt="..."></a>
+            <div class="offcanvas offcanvas-start" tabindex="1" id="Ahsoka" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title titulo" id="offcanvasExampleLabel">Ahsoka</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="  mb-5">
+                  Ambientada después de la caída del Imperio, la serie sigue al antiguo caballero Jedi mientras investiga una amenaza que se cierne sobre la galaxia.
+                </div >
+                <a class=" btn btn-primary mt-5"  role="button" target="_blank" href="https://cinecalidad.casa/3642-ahsoka-2023-temporada-1-episodio-1.html
+                ">  Ver pelicula</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col articulo">
+            <a class="nav-link active mt-2 articulo" data-bs-toggle="offcanvas" href="#Buenospresagios" role="button" aria-controls="offcanvasExamples"> Buenos presagios <img src="imgenesSerie/Buenospresagios.jpg" class="d-block w-100" alt="..."></a>
+          
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="Buenospresagios" aria-labelledby="offcanvasExampleLabelss">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss">Buenos presagios</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body ">
+                <div class="mb-5">
+                 Nos topamos con Aziraphale y Crowley, cómodos en habitar el Londres de fines de los años 80, después de compartir la vida desde que Dios desterró del Paraíso a Adán y Eva. Ahora, les toca atestiguar cómo el niño hijo del diablo, el Anti-cristo, no asume su rol en esta historia y desconoce que su misión es traer el fuego la Creación.
+                </div>
+                  <a class=" btn btn-primary "  role="button" target="_blank" href="https://cinecalidad.casa/3553-buenos-presagios-2019-temporada-1-episodio-1.html">  Ver pelicula</a>
+              </div>
+            </div>
+          </div>
+
+                 
+          <div class="col articulo">
+            <a class="nav-link active mt-2 articulo" data-bs-toggle="offcanvas" href="#Genv" role="button" aria-controls="offcanvasExamples"> Gen v <img src="imgenesSerie/Gen v.jpg" class="d-block w-100" alt="..."></a>
+          
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="Genv" aria-labelledby="offcanvasExampleLabelss">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss">Gen v</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body ">
+                <div class="mb-5">
+                  En la única universidad para superhéroes de Estados Unidos, los estudiantes superdotados ponen a prueba sus límites morales, compitiendo por la clasificación más alta de la universidad y la oportunidad de unirse a The Seven, el equipo de élite de superhéroes de Vought International. Cuando los oscuros secretos de la escuela salen a la luz, deben decidir en qué tipo de héroes quieren convertirse.
+                </div>
+                  <a class=" btn btn-primary "  role="button" target="_blank" href="https://cinecalidad.casa/3742-gen-v-2023-temporada-1-episodio-1.html">  Ver pelicula</a>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col articulo">
+            <a class="nav-link active mt-2 articulo" data-bs-toggle="offcanvas" href="#SexEducation" role="button" aria-controls="offcanvasExamples"> Sex Education <img src="imgenesSerie/SexEducation.jpg" class="d-block w-100" alt="..."></a>
+          
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="SexEducation" aria-labelledby="offcanvasExampleLabelss">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss">Sex Education</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body ">
+                <div class="mb-5">
+                  Por tener una madre terapeuta, Otis siempre tiene una respuesta cuando de sexo se trata. Así que su rebelde amiga Maeve le propone abrir una clínica de terapia sexual.
+                </div>
+                  <a class=" btn btn-primary "  role="button" target="_blank" href="https://cinecalidad.casa/3732-sex-education-2019-temporada-1-episodio-1.html">  Ver pelicula</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col articulo">
+            <a class="nav-link active mt-2 articulo" data-bs-toggle="offcanvas" href="#LakersTiempodeganar" role="button" aria-controls="offcanvasExamples"> Lakers: Tiempo de ganar <img src="imgenesSerie/LakersTiempodeganar.jpg" class="d-block w-100" alt="..."></a>
+          
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="LakersTiempodeganar" aria-labelledby="offcanvasExampleLabelss">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss">Lakers: Tiempo de ganar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body ">
+                <div class="mb-5">
+                  La vida profesional y personal de los Lakers de Los Ángeles de la década de 1980. Una de las dinastías deportivas más veneradas y dominantes, con un equipo que definió una era, tanto dentro como fuera de la cancha.
+                </div>
+                  <a class=" btn btn-primary "  role="button" target="_blank" href="https://cinecalidad.casa/3620-lakers-tiempo-de-ganar-2022-temporada-1-episodio-1.html">  Ver pelicula</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col articulo">
+            <a class="nav-link active mt-2 articulo" data-bs-toggle="offcanvas" href="#Uncuentoperfecto" role="button" aria-controls="offcanvasExamples"> Un cuento perfecto <img src="imgenesSerie/Uncuentoperfecto.jpg" class="d-block w-100" alt="..."></a>
+          
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="Uncuentoperfecto" aria-labelledby="offcanvasExampleLabelss">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss">Un cuento perfecto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body ">
+                <div class="mb-5">
+                  Tras huir de su propia boda, Margot siente que ha perdido el norte. Lo que no sospecha es que el irresistible caos de David es lo que necesita para encauzar su vida.
+
+                </div>
+                  <a class=" btn btn-primary "  role="button" target="_blank" href="https://cinecalidad.casa/3533-un-cuento-perfecto-2023-temporada-1-episodio-1.html">  Ver pelicula</a>
+              </div>
+            </div>
+          </div>
+
+         
+        </div>
+      </div>
+ 
+
+      <div class="container-fluid mt-3 articulo" id="titeaccion">
+        <div  class="row align-items-start">
+          <div class="titulo" >Acción</div> 
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6 carousel slide me-1 ms-1 articulo" id="accion">
+        <div class="col articulo">
+          <a class="nav-link active mt-2  articulo" data-bs-toggle="offcanvas" href="#Laemboscada" role="button" aria-controls="offcanvasExample"> La emboscada <img src="ImegenPelicula/accion/laemboscada.jpg" class="d-block w-100" alt="..."></a>
+          <div class="offcanvas offcanvas-start" tabindex="1" id="Laemboscada" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title titulo" id="offcanvasExampleLabel">La emboscada</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="  mb-5">
+                Un grupo de jóvenes comandos de élite, liderados por el Capitán Drummond, tienen la tarea de recopilar información altamente clasificada que puede cambiar el destino de la guerra.
+              </div >
+              <a class=" btn btn-primary mt-5"  role="button" target="_blank" href="https://v2.cinecalidad.com.mx/ver-pelicula/la-emboscada-en-cinecalidad-gratis/">  Ver pelicula</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col articulo">
+          <a class="nav-link active mt-2 articulo" data-bs-toggle="offcanvas" href="#GranTurismo" role="button" aria-controls="offcanvasExamples"> Gran Turismo: De jugador a corredor <img src="ImegenPelicula/accion/granTurismo.jpg" class="d-block w-100" alt="..."></a>
+        
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="GranTurismo" aria-labelledby="offcanvasExampleLabelss">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss">Gran Turismo: De jugador a corredor</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+              <div class="mb-5">
+                Basada en una historia real, la película cuenta cómo cumplió su sueño un adolescente que jugaba a Gran Turismo, juego en el que ganó una serie de competiciones patrocinadas por Nissan, y que le sirvió de trampolín para acabar convirtiéndose en un piloto de carreras profesional.
+              </div>
+                <a class=" btn btn-primary "  role="button" target="_blank" href="https://v2.cinecalidad.com.mx/ver-pelicula/gran-turismo-de-jugador-a-corredor-en-cinecalidad-gratis/">  Ver pelicula</a>
+            </div>
+          </div>
+        </div>
+               
+        <div class="col articulo">
+          <a class="nav-link active mt-2 articulo" data-bs-toggle="offcanvas" href="#LaLibretaNegra" role="button" aria-controls="offcanvasExamples"> La Libreta Negra <img src="ImegenPelicula/accion/LaLibretaNegra.jpg" class="d-block w-100" alt="..."></a>
+        
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="LaLibretaNegra" aria-labelledby="offcanvasExampleLabelss">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss">La Libreta Negra</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+              <div class="mb-5">
+                Un diácono destrozado decide tomarse la justicia por su mano y enfrentarse a unos policías corruptos para limpiar el nombre de su hijo, injustamente acusado de secuestro.
+              </div>
+                <a class=" btn btn-primary "  role="button" target="_blank" href="https://v2.cinecalidad.com.mx/ver-pelicula/la-libreta-negra-en-cinecalidad-gratis/">  Ver pelicula</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col articulo">
+          <a class="nav-link active mt-2 articulo" data-bs-toggle="offcanvas" href="#Freestyle" role="button" aria-controls="offcanvasExamples"> Freestyle <img src="ImegenPelicula/accion/Freestyle.jpg" class="d-block w-100" alt="..."></a>
+        
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="Freestyle" aria-labelledby="offcanvasExampleLabelss">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss">Freestyle</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+              <div class="mb-5">
+                Una promesa del rap con un pasado delictivo decide vender droga para saldar su deuda con el estudio de grabación. Pero su arriesgado plan podría costarle muy caro.
+              </div>
+                <a class=" btn btn-primary "  role="button" target="_blank" href="https://v2.cinecalidad.com.mx/ver-pelicula/freestyle-en-cinecalidad-gratis/">  Ver pelicula</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col articulo">
+          <a class="nav-link active mt-2 articulo" data-bs-toggle="offcanvas" href="#Devoradoradealmas" role="button" aria-controls="offcanvasExamples"> Devoradora de almas <img src="ImegenPelicula/accion/Devoradoradealmas.jpg" class="d-block w-100" alt="..."></a>
+        
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="Devoradoradealmas" aria-labelledby="offcanvasExampleLabelss">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss">Devoradora de almas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+              <div class="mb-5">
+                Un grupo de expertos en redes sociales son contratados para ayudar a prosperar a una antigua empresa familiar. Pero pronto se encuentran atrapados en una pequeña isla de un lago en la que se dice que vive una antigua bruja.
+              </div>
+                <a class=" btn btn-primary "  role="button" target="_blank" href="https://v2.cinecalidad.com.mx/ver-pelicula/devoradora-de-almas-en-cinecalidad-gratis/">  Ver pelicula</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col articulo">
+          <a class="nav-link active mt-2 mb-3 articulo" data-bs-toggle="offcanvas" href="#Nadaesimposible" role="button" aria-controls="offcanvasExamples"> Nada es imposible <img src="ImegenPelicula/accion/Nadaesimposible.jpg" class="d-block w-100" alt="..."></a>
+        
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="Nadaesimposible" aria-labelledby="offcanvasExampleLabelss">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss"> Nada es imposible</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+              <div class="mb-5">
+                Cuando un equipo de la NBA anuncia repentinamente pruebas abiertas, un conserje de secundaria tiene una segunda oportunidad tanto en el amor como en la vida.
+              </div>
+                <a class=" btn btn-primary "  role="button" target="_blank" href="https://v2.cinecalidad.com.mx/ver-pelicula/nada-es-imposible/">  Ver pelicula</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6 carousel slide me-1 ms-1 hide" id="peliAccionOculta">
+        <div class="col articulo">
+          <a class="nav-link active mt-2  articulo" data-bs-toggle="offcanvas" href="#Laemboscada" role="button" aria-controls="offcanvasExample"> La emboscada <img src="ImegenPelicula/accion/laemboscada.jpg" class="d-block w-100" alt="..."></a>
+          <div class="offcanvas offcanvas-start" tabindex="1" id="Laemboscada" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title titulo" id="offcanvasExampleLabel">La emboscada</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="  mb-5">
+                Un grupo de jóvenes comandos de élite, liderados por el Capitán Drummond, tienen la tarea de recopilar información altamente clasificada que puede cambiar el destino de la guerra.
+              </div >
+              <a class=" btn btn-primary mt-5"  role="button" target="_blank" href="https://v2.cinecalidad.com.mx/ver-pelicula/la-emboscada-en-cinecalidad-gratis/">  Ver pelicula</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col articulo">
+          <a class="nav-link active mt-2 articulo" data-bs-toggle="offcanvas" href="#GranTurismo" role="button" aria-controls="offcanvasExamples"> Gran Turismo: De jugador a corredor <img src="ImegenPelicula/accion/granTurismo.jpg" class="d-block w-100" alt="..."></a>
+        
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="GranTurismo" aria-labelledby="offcanvasExampleLabelss">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss">Gran Turismo: De jugador a corredor</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+              <div class="mb-5">
+                Basada en una historia real, la película cuenta cómo cumplió su sueño un adolescente que jugaba a Gran Turismo, juego en el que ganó una serie de competiciones patrocinadas por Nissan, y que le sirvió de trampolín para acabar convirtiéndose en un piloto de carreras profesional.
+              </div>
+                <a class=" btn btn-primary "  role="button" target="_blank" href="https://v2.cinecalidad.com.mx/ver-pelicula/gran-turismo-de-jugador-a-corredor-en-cinecalidad-gratis/">  Ver pelicula</a>
+            </div>
+          </div>
+        </div>
+               
+        <div class="col articulo">
+          <a class="nav-link active mt-2 articulo" data-bs-toggle="offcanvas" href="#LaLibretaNegra" role="button" aria-controls="offcanvasExamples"> La Libreta Negra <img src="ImegenPelicula/accion/LaLibretaNegra.jpg" class="d-block w-100" alt="..."></a>
+        
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="LaLibretaNegra" aria-labelledby="offcanvasExampleLabelss">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss">La Libreta Negra</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+              <div class="mb-5">
+                Un diácono destrozado decide tomarse la justicia por su mano y enfrentarse a unos policías corruptos para limpiar el nombre de su hijo, injustamente acusado de secuestro.
+              </div>
+                <a class=" btn btn-primary "  role="button" target="_blank" href="https://v2.cinecalidad.com.mx/ver-pelicula/la-libreta-negra-en-cinecalidad-gratis/">  Ver pelicula</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col articulo">
+          <a class="nav-link active mt-2 articulo" data-bs-toggle="offcanvas" href="#Freestyle" role="button" aria-controls="offcanvasExamples"> Freestyle <img src="ImegenPelicula/accion/Freestyle.jpg" class="d-block w-100" alt="..."></a>
+        
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="Freestyle" aria-labelledby="offcanvasExampleLabelss">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss">Freestyle</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+              <div class="mb-5">
+                Una promesa del rap con un pasado delictivo decide vender droga para saldar su deuda con el estudio de grabación. Pero su arriesgado plan podría costarle muy caro.
+              </div>
+                <a class=" btn btn-primary "  role="button" target="_blank" href="https://v2.cinecalidad.com.mx/ver-pelicula/freestyle-en-cinecalidad-gratis/">  Ver pelicula</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col articulo">
+          <a class="nav-link active mt-2 articulo" data-bs-toggle="offcanvas" href="#Devoradoradealmas" role="button" aria-controls="offcanvasExamples"> Devoradora de almas <img src="ImegenPelicula/accion/Devoradoradealmas.jpg" class="d-block w-100" alt="..."></a>
+        
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="Devoradoradealmas" aria-labelledby="offcanvasExampleLabelss">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss">Devoradora de almas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+              <div class="mb-5">
+                Un grupo de expertos en redes sociales son contratados para ayudar a prosperar a una antigua empresa familiar. Pero pronto se encuentran atrapados en una pequeña isla de un lago en la que se dice que vive una antigua bruja.
+              </div>
+                <a class=" btn btn-primary "  role="button" target="_blank" href="https://v2.cinecalidad.com.mx/ver-pelicula/devoradora-de-almas-en-cinecalidad-gratis/">  Ver pelicula</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col articulo">
+          <a class="nav-link active mt-2 mb-3 articulo" data-bs-toggle="offcanvas" href="#Nadaesimposible" role="button" aria-controls="offcanvasExamples"> Nada es imposible <img src="ImegenPelicula/accion/Nadaesimposible.jpg" class="d-block w-100" alt="..."></a>
+        
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="Nadaesimposible" aria-labelledby="offcanvasExampleLabelss">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss"> Nada es imposible</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+              <div class="mb-5">
+                Cuando un equipo de la NBA anuncia repentinamente pruebas abiertas, un conserje de secundaria tiene una segunda oportunidad tanto en el amor como en la vida.
+              </div>
+                <a class=" btn btn-primary "  role="button" target="_blank" href="https://v2.cinecalidad.com.mx/ver-pelicula/nada-es-imposible/">  Ver pelicula</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+</div>
+    
+
+
+</body>
+
+</html>
