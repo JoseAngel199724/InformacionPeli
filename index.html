@@ -9,14 +9,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300&family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 <script defer src="/buscador.js"></script>
 <title>Document</title>
+
 </head>
 <body>
 <div class="container-fluid">
   <nav class="navbar navbar-expand-md bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#" id="recargar"> <span class="icon icon-dice"></span> MAZES</a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -26,19 +29,16 @@
             <a class="nav-link active" aria-current="page"  type="button" id="btnaccion">Accion</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  type="button" id="btnterror">Terror</a>
+            <a class="nav-link active"   type="button" id="btnterror">Terror</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <a class="nav-link active" href="#"  type="button" id="btnserie">Series</a>
           </li>
         </ul>
         <div class="container-fluid">
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" id="buscador" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" >Search</button>
+             
             </form>
           </div>
       </div>
@@ -327,6 +327,118 @@
         </div>
       </div>
  
+   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6 carousel slide me-1 ms-1 hide" id="seriesOcultas">
+        <div class="col articulo">
+          <a class="nav-link active mt-2  articulo" data-bs-toggle="offcanvas" href="#ElContinental" role="button" aria-controls="offcanvasExample">El Continental: Del mundo de John Wick<img src="imgenesSerie/elcontinental.png" class="d-block w-100" alt="..."></a>
+          <div class="offcanvas offcanvas-start" tabindex="1" id="ElContinental" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title titulo" id="offcanvasExampleLabel">El Continental: Del mundo de John Wick</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="  mb-5">
+                Serie precuela de la franquicia cinematográfica John Wick, centrada en la historia de Winston Scott. Muestra su camino para llegar a su posición como propietario de la sucursal neoyorquina de la cadena de Hoteles Continental, refugios seguros para asesinos en cuyos terrenos no se puede matar ni dejar de pagar una deuda.
+              </div >
+              <a class=" btn btn-primary mt-5"  role="button" target="_blank" href="https://ww1.cuevana3.ch/episodio/el-continental-del-mundo-de-john-wick-1x1">  Ver pelicula</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col articulo">
+          <a class="nav-link active mt-2 articulo" data-bs-toggle="offcanvas" href="#Chucky" role="button" aria-controls="offcanvasExamples"> Chucky <img src="imgenesSerie/Chucky.jpg" class="d-block w-100" alt="..."></a>
+        
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="Chucky" aria-labelledby="offcanvasExampleLabelss">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss">Chucky</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+              <div class="mb-5">
+                Después de que un muñeco vintage de Chucky aparece en una venta de patio suburbana, una ciudad estadounidense se ve sumida en el caos, luego de que una serie de crímenes horribles comienzan a exponer las hipocresías y los secretos de la ciudad.Mientras tanto, la llegada de enemigos y aliados del pasado de Chucky amenaza con exponer la verdad detrás de los acontecimientos así como los orígenes no contados del malvado muñeco.
+
+
+              </div>
+                <a class=" btn btn-primary "  role="button" target="_blank" href="https://ww1.cuevana3.ch/episodio/chucky-3x1">  Ver pelicula</a>
+            </div>
+          </div>
+        </div>
+               
+        <div class="col articulo">
+          <a class="nav-link active mt-2 articulo" data-bs-toggle="offcanvas" href="#AmericanHorrorStory" role="button" aria-controls="offcanvasExamples">American Horror Story<img src="ImegenPelicula/accion/Amillonesdekilómetros.jpg" class="d-block w-100" alt="..."></a>
+        
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="AmericanHorrorStory" aria-labelledby="offcanvasExampleLabelss">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss"> American Horror Story</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+              <div class="mb-5">
+                American Horror Story es una serie televisiva de drama y horror creada y producida por Ryan Murphy (Glee) y Brad Falchuk (Nip/Tuck). Se ha descrito como una serie antológica, ya que cada temporada se hace como una miniserie independiente, con un grupo de personajes diferentes, escenarios distintos y una trama que tiene su propio comienzo, desarrollo y final.
+              </div>
+                <a class=" btn btn-primary "  role="button" target="_blank" href="https://ww1.cuevana3.ch/episodio/american-horror-story-12x2">  Ver pelicula</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col articulo">
+          <a class="nav-link active mt-2 articulo" data-bs-toggle="offcanvas" href="#TheBoys" role="button" aria-controls="offcanvasExamples"> The Boys <img src="imgenesSerie/theboys.jpg" class="d-block w-100" alt="..."></a>
+        
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="TheBoys" aria-labelledby="offcanvasExampleLabelss">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss">The Boys</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+              <div class="mb-5">
+                ¿Qué pasa cuando los superhéroes abusan de sus superpoderes en lugar de utilizarlos para hacer el bien? The Boys es la adaptación televisiva de la obra de Garth Ennis que presenta un mundo superheróico donde los héroes están corrompidos por la fama. Esta actitud cegada y de alta celebridad les lleva a poner en peligro al mundo más de una vez. Una batalla entre las personas corrientes y los superhéroes tiene lugar cuando estos últimos deciden desvelar la verdad sobre “Los Siete” y una corporación multinacional todopoderosa que maneja a los superhéroes y oculta todos sus sucios secretos, llamada Vought.
+              </div>
+                <a class=" btn btn-primary "  role="button" target="_blank" href="https://ww1.cuevana3.ch/episodio/the-boys-3x8">  Ver pelicula</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col articulo">
+          <a class="nav-link active mt-2 articulo" data-bs-toggle="offcanvas" href="#Merlina" role="button" aria-controls="offcanvasExamples">Merlina <img src="imgenesSerie/merlina.jpg" class="d-block w-100" alt="..."></a>
+        
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="Merlina" aria-labelledby="offcanvasExampleLabelss">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss">Merlina</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+              <div class="mb-5">
+                Inteligente, sarcástica y un poco muerta por dentro, Merlina Addams investiga una ola de asesinatos mientras hace nuevos amigos (y enemigos) en la Academia Nunca Más.
+              </div>
+                <a class=" btn btn-primary "  role="button" target="_blank" href="https://ww1.cuevana3.ch/episodio/wednesday-1x8">  Ver pelicula</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col articulo">
+          <a class="nav-link active mt-2 mb-3 articulo" data-bs-toggle="offcanvas" href="#InvasiónSecreta" role="button" aria-controls="offcanvasExamples"> Invasión Secreta <img src="imgenesSerie/InvasiónSecreta.png" class="d-block w-100" alt="..."></a>
+        
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="InvasiónSecreta" aria-labelledby="offcanvasExampleLabelss">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title titulo" id="offcanvasExampleLabelss">Invasión Secreta</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+              <div class="mb-5">
+                Nick Fury se entera de una invasión clandestina de la Tierra por parte de una facción de Skrulls. Fury se une a sus aliados, incluidos Everett Ross, Maria Hill y Talos, el Skrull que se ha ganado la vida en la Tierra. Juntos compiten contra el tiempo para frustrar una...
+              </div>
+                <a class=" btn btn-primary "  role="button" target="_blank" href="https://ww1.cuevana3.ch/episodio/invasion-secreta-1x6">  Ver pelicula</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
          <!-- PELICULAS DE ACCION -->
       <div class="container-fluid mt-3 articulo" id="titeaccion">
         <div  class="row align-items-start">
@@ -758,6 +870,12 @@
                   </div>
                 </div>
               </div>
+
+
+
+
+
+
 </div>
     
 

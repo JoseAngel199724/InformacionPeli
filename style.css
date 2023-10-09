@@ -26,3 +26,7 @@ body{
 .hide{
     display: none !important;
 }
+.icon{
+    color: brown;
+    font-size: 30px;
+}
